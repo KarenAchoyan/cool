@@ -1,0 +1,213 @@
+.about{
+    width: 100%;
+    height: auto;
+}
+.about>h1{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 90px;
+    color: rgba(30, 31, 34, 0.55);
+}
+.about>h3{
+    color: rgba(255, 0, 0, 0.62);
+    text-align: center;
+    font-size: 30px;
+}
+.aboutText{
+    margin: auto;
+    text-align: center;
+    width: 750px;
+    padding-top: 50px;
+    color: rgba(30, 31, 34, 0.55);
+}
+.container{
+    padding-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+    background: whitesmoke;
+}
+.container>h2{
+    text-align: center;
+    font-size: 38px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+.container>h3{
+    color: rgba(255, 0, 0, 0.62);
+    text-align: center;
+    font-size: 30px;
+}
+.box {
+    padding-top: 40px;
+    width: 90%;
+    margin: auto;
+
+}
+
+.itemImg {
+    text-align: center;
+}
+.language{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.language img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.item {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.item > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.overlay {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #000000a2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay span {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.overlay a:hover {
+    color: #00aced;
+}
+.special{
+    text-decoration: none;
+    color: white;
+}
+.bottomText {
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 770px) {
+    .aboutText{
+        width: 600px;
+    }
+    .item{
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 620px) {
+    .aboutText{
+        width: 550px;
+    }
+}
+@media only screen and (max-width: 555px) {
+    .aboutText{
+        width: 400px;
+    }
+    .container>h2{
+        font-size: 30px;
+    }
+    .container>h3{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 570px) {
+    .about>h1{
+        font-size: 40px;
+    }
+    .about>h3{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .about>h1{
+        font-size: 30px;
+    }
+    .about>h3{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .aboutText{
+        width: 300px;
+    }
+    .container>h2{
+        font-size: 20px;
+    }
+    .container>h3{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .aboutText{
+        width: 200px;
+    }
+    .about>h1{
+        font-size: 20px;
+    }
+    .about>h3{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 360px) {
+
+    .aboutText{
+        width: 300px;
+    }
+    .container>h2{
+        font-size: 30px;
+    }
+    .container>h3{
+        font-size: 20px;
+    }
+
+}
+@media only screen and (max-width: 735px) {
+    .item {
+        width:calc(100% / 2 - 10px);
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .item {
+        max-width: 50%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+}

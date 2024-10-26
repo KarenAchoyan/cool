@@ -1,0 +1,141 @@
+.lesson {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.container{
+    width: 90%;
+    margin: 30px auto;
+}
+.container h1{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.container p{
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    line-height: 28px;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+.cardImage{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.boxText {
+    margin-left: 80px;
+}
+
+.boxText > p {
+    font-family: 'Spooky', sans-serif;
+    color: #535967;
+}
+
+.boxInput {
+    width: 20%;
+    margin-right: 80px;
+}
+.card{
+    width: 95%;
+    padding-left: 80px;
+    padding-top: 20px;
+    margin: auto;
+}
+.cardDiv{
+    display: flex;
+    font-size: 20px;
+    margin-left: 20px;
+    justify-content: start;
+    color: red;
+}
+.cardDiv>p{
+    color: black;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .boxText {
+        margin-left: 20px;
+    }
+
+    .boxInput {
+        width: 80%;
+        margin-right: 20px;
+    }
+
+    .card {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+
+    .cardDiv {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .cardDiv > p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .boxText {
+        margin-left: 40px;
+    }
+
+    .boxInput {
+        width: 50%;
+        margin-right: 40px;
+    }
+
+    .card {
+        width: 100%;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+
+    .cardDiv {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    .cardDiv > p {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    .boxText {
+        margin-left: 80px;
+    }
+
+    .boxInput {
+        width: 20%;
+        margin-right: 80px;
+    }
+
+    .card {
+        width: 95%;
+        padding-left: 80px;
+        padding-top: 20px;
+    }
+
+    .cardDiv {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .cardDiv > p {
+        font-size: 20px;
+    }
+}

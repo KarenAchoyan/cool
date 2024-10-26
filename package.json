@@ -1,0 +1,34 @@
+{
+  "name": "language",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "antd": "^5.19.4",
+    "install": "^0.13.0",
+    "next": "13.4.7",
+    "next-redux-wrapper": "^8.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "next-i18next": "^15.1.1",
+    "react-slick": "^0.30.2",
+    "redux": "^4.2.1",
+    "react-redux": "^8.1.1",
+    "redux-actions": "^3.0.0",
+    "redux-saga": "^1.2.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "axios": "^1.7.2",
+    "eslint-config-next": "14.2.5",
+    "react-intl": "^6.5.5",
+    "redux-devtools-extension": "^2.13.9"
+  }
+}

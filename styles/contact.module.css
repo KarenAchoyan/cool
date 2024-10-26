@@ -1,0 +1,98 @@
+.contact{
+    width: 100%;
+}
+.contact>h3{
+    padding-top: 20px;
+    text-align: center;
+    color: red;
+    font-family: 'Spooky', sans-serif;
+}
+.contact>h1{
+    text-align: center;
+    color: #030367;
+    font-size: 30px;
+    font-family: 'Spooky', sans-serif;
+}
+.map iframe {
+    width: 95%;
+    margin: auto;
+    height: 500px;
+    border: 0px;
+    display: block;
+    pointer-events: none;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+
+.contactInfo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px;
+    height: 100%;
+    width: 2px;
+    background-color: #ddd;
+}
+
+.contactInfo:last-child::after {
+    display: none;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.item span {
+    font-size: 40px;
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+.item p {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-family: 'Spooky', sans-serif;
+}
+@media only screen and (max-width: 720px) {
+    .box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contactInfo {
+        width: 100%; /* Full width on small screens */
+        margin: 10px 0; /* Vertical margin for spacing */
+        flex: none; /* Prevents flex shrinking or growing */
+    }
+
+    .contactInfo::after {
+        display: none; /* Removes the separator lines */
+    }
+    .map{
+        padding-left: 0px;
+    }
+    .map>iframe{
+        height:200px ;
+    }
+}
