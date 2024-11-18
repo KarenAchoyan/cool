@@ -60,6 +60,13 @@
     transition: 0.5s;
     font-family: 'Spooky', sans-serif;
 }
+.header a{
+    color: black;
+    text-decoration: none;
+}
+.header a:hover{
+    color: indianred;
+}
 .text{
     text-decoration: none;
     color: black;

@@ -39,16 +39,17 @@ const Header = () => {
                     <li><Link className={styles.text} href={"/about"}>
                         {t('about_us')}
                     </Link></li>
-                    <li><Link className={styles.text} href={"/lessons"}>
-                        {t('courses')}
-                    </Link></li>
+                    {/*<li><Link className={styles.text} href={"/lessons"}>*/}
+                    {/*    {t('courses')}*/}
+                    {/*</Link></li>*/}
                     <li>
                         <Link className={styles.text} href={"/contact"}>
                             {t('contact_us')}
                         </Link>
                     </li>
                     <li><Link className={styles.text} href={'/teachers'}>{t('specialists')}</Link></li>
-                    <li>{t('international_exams')}</li>
+                    <li><Link href={'/international'}>{t('international_exams')}</Link></li>
+                    <li><Link href={'/international'}>{t('galleries')}</Link></li>
                     <LanguageSwitcher openDrb={isOpenDrb} isOpenDrbFlag={isOpenDrbFlag}
                                       setIsOpenDrb={setIsOpenDrb} setIsOpenDrbFlag={setIsOpenDrbFlag}/>
 

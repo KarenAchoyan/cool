@@ -10,7 +10,8 @@ const Level = () => {
             <div className={styles.overlay}>
                 <h1>COOL առաջարկ </h1>
                 <div className={styles.text}>
-                    <p>Գրանցվիր  ընկիերոջդ հետ ստացիր 10% զեղչ, ընտրիր մեկից ավելի լեզու՝ ստացիր 10% զեղչ</p>
+                    <p>Գրանցվիր  ընկիերոջդ հետ ստացիր 10% զեղչ</p>
+                    <p>ընտրիր մեկից ավելի լեզու՝ ստացիր 10% զեղչ</p>
                 </div>
                 <div className={styles.button}>
                     <button>Գրանցվել</button>
