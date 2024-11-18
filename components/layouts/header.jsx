@@ -49,7 +49,7 @@ const Header = () => {
                     </li>
                     <li><Link className={styles.text} href={'/teachers'}>{t('specialists')}</Link></li>
                     <li><Link href={'/international'}>{t('international_exams')}</Link></li>
-                    <li><Link href={'/international'}>{t('galleries')}</Link></li>
+                    <li><Link href={'/gallery'}>{t('galleries')}</Link></li>
                     <LanguageSwitcher openDrb={isOpenDrb} isOpenDrbFlag={isOpenDrbFlag}
                                       setIsOpenDrb={setIsOpenDrb} setIsOpenDrbFlag={setIsOpenDrbFlag}/>
 
