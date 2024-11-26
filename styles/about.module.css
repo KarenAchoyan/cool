@@ -13,6 +13,17 @@
     text-align: center;
     font-size: 30px;
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto;
+}
+.itemAll{
+    width: calc(100% / 5);
+    text-align: center;
+    margin: 20px 0;
+}
 .aboutText{
     margin: auto;
     text-align: center;

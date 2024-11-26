@@ -7,11 +7,13 @@ import {getTeachers} from "../../store/teacher/actions";
 import Slider from "react-slick";
 import Link from "next/link";
 import {ArrowRightOutlined} from "@ant-design/icons";
+import { useRouter } from 'next/router';
 
 const Index = () => {
     const teachers = useSelector(state => state.teacher.teachers);
+    const router = useRouter();
+    const { id } = router.query;
     const dispatch = useDispatch();
-
     useEffect(() => {
         dispatch(getTeachers.request());
     }, [dispatch]);
