@@ -1,33 +1,21 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from "../../styles/language.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import {t} from "../../utils/utils";
+import {useDispatch, useSelector} from "react-redux";
+import {getLanguages} from "@/store/languages/actions";
 
 const Language = () => {
-    // Array of language data
-    const languages = [
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/eng.jpg", alt: "English", name: "English" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/it.jpg", alt: "Italian", name: "Italian" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/sp.jpg", alt: "Spanish", name: "Spanish" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/por.jpg", alt: "Portuguese", name: "Portuguese" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/ja.jpg", alt: "Japanese", name: "Japanese" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/che.jpg", alt: "Chinese", name: "Chinese" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/eng.jpg", alt: "English", name: "English" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/it.jpg", alt: "Italian", name: "Italian" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/sp.jpg", alt: "Spanish", name: "Spanish" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/por.jpg", alt: "Portuguese", name: "Portuguese" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/ja.jpg", alt: "Japanese", name: "Japanese" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/che.jpg", alt: "Chinese", name: "Chinese" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/eng.jpg", alt: "English", name: "English" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/it.jpg", alt: "Italian", name: "Italian" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/sp.jpg", alt: "Spanish", name: "Spanish" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/por.jpg", alt: "Portuguese", name: "Portuguese" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/ja.jpg", alt: "Japanese", name: "Japanese" },
-        { src: "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/che.jpg", alt: "Chinese", name: "Chinese" }
-    ];
+    const languages = useSelector(state => state.language.languages);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getLanguages.request());
+    },[dispatch])
+
 
     const PrevArrow = (props) => {
         const { onClick } = props;
@@ -97,7 +85,7 @@ const Language = () => {
                 <Slider {...settings}>
                     {languages.map((lang, index) => (
                         <div className={styles.item} key={index}>
-                            <img src={lang.src} alt={lang.alt} />
+                            <img src={process.env.IMAGE_URL+lang.avatar} alt={lang.alt} />
                             <span>{lang.name}</span>
                         </div>
                     ))}

@@ -3,6 +3,7 @@ import {slideSaga} from "./slides/saga";
 import reviewSaga from "./reivews/saga";
 import {gallerySaga} from "./gallery/saga";
 import {teacherSaga} from "./teacher/saga";
+import {languageSaga} from "@/store/languages/saga";
 
 
 function* rootSaga() {
@@ -10,8 +11,8 @@ function* rootSaga() {
         slideSaga(),
         reviewSaga(),
         gallerySaga(),
-        teacherSaga()
-
+        teacherSaga(),
+        languageSaga()
     ]);
 }
 
