@@ -63,6 +63,7 @@
 .item > span {
     display: block;
     margin-top: 10px;
+    font-size: 12px;
 }
 @media only screen and  (max-width: 640px ){
     .language>h5{

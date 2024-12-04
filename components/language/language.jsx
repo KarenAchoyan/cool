@@ -89,7 +89,7 @@ const Language = () => {
                             <Link href={"/teachers/"+lang.id}>
                                 <img src={process.env.IMAGE_URL + lang.avatar} alt={lang.alt}/>
                             </Link>
-                            <span>{lang.name}</span>
+                            <span>{lang.title}</span>
                         </div>
                     ))}
                 </Slider>
