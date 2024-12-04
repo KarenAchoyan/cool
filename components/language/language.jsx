@@ -7,6 +7,7 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import {t} from "../../utils/utils";
 import {useDispatch, useSelector} from "react-redux";
 import {getLanguages} from "@/store/languages/actions";
+import Link from "next/link";
 
 const Language = () => {
     const languages = useSelector(state => state.language.languages);
@@ -85,7 +86,9 @@ const Language = () => {
                 <Slider {...settings}>
                     {languages.map((lang, index) => (
                         <div className={styles.item} key={index}>
-                            <img src={process.env.IMAGE_URL+lang.avatar} alt={lang.alt} />
+                            <Link href={"/teachers/"+lang.id}>
+                                <img src={process.env.IMAGE_URL + lang.avatar} alt={lang.alt}/>
+                            </Link>
                             <span>{lang.name}</span>
                         </div>
                     ))}

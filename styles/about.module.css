@@ -129,8 +129,19 @@
 .item:hover .overlay {
     opacity: 1;
 }
-
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1250px) {
+    .itemAll{
+        width: calc(100% / 3);
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .itemAll{
+        width: calc(100% / 2);
+        text-align: center;
+        margin: 20px 0;
+    }
     .aboutText{
         width: 600px;
     }
@@ -138,9 +149,25 @@
         margin: auto;
     }
 }
+@media only screen and (max-width: 735px) {
+    .item {
+        width:calc(100% / 2 - 10px);
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media only screen and (max-width: 620px) {
     .aboutText{
         width: 550px;
+    }
+}
+@media only screen and (max-width: 570px) {
+    .about>h1{
+        font-size: 40px;
+    }
+    .about>h3{
+        font-size: 30px;
     }
 }
 @media only screen and (max-width: 555px) {
@@ -154,12 +181,17 @@
         font-size: 25px;
     }
 }
-@media only screen and (max-width: 570px) {
-    .about>h1{
-        font-size: 40px;
+@media only screen and (max-width: 500px) {
+    .item {
+        max-width: 50%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
     }
-    .about>h3{
-        font-size: 30px;
+    .itemAll{
+        width: calc(100% / 1);
+        text-align: center;
+        margin: 20px 0;
     }
 }
 @media only screen and (max-width: 450px) {
@@ -191,9 +223,6 @@
     .about>h3{
         font-size: 15px;
     }
-}
-@media only screen and (max-width: 360px) {
-
     .aboutText{
         width: 300px;
     }
@@ -205,20 +234,4 @@
     }
 
 }
-@media only screen and (max-width: 735px) {
-    .item {
-        width:calc(100% / 2 - 10px);
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
-@media only screen and (max-width: 500px) {
-    .item {
-        max-width: 50%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-}
