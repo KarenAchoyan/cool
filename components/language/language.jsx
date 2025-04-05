@@ -50,8 +50,16 @@ const Language = () => {
             {
                 breakpoint: 1300,
                 settings: {
-                    slidesToShow: 11,
+                    slidesToShow: 10,
                     slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 8,
+                    slidesToScroll: 1,
+                    infinite: true,
                 }
             },
             {
