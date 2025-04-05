@@ -235,3 +235,43 @@
 
 }
 
+
+.interviewContent{
+    display: flex;
+    width: 750px;
+    margin: 50px auto;
+}
+.interviewAvatar{
+    width: 40%;
+}
+.interviewAvatar>img{
+    width: 100%;
+    border-radius: 10px;
+}
+.interviewContent h1{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: rgba(30, 31, 34, 0.55);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.content button{
+    padding:10px 20px;
+    border:1px solid black;
+    background: transparent;
+    margin-top: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+.content button:hover{
+    background:black;
+    color: white;
+}
+.content{
+    padding-left: 20px;
+}
